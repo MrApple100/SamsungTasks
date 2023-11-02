@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    final String TAG_MAIN = "MainActivityDebug";
     TextView mines;
     Button[][] cells;
     final int WIDTH = 10;
@@ -39,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
 
         for(int i=0;i<HEIGHT;i++){
             for(int j=0;j<WIDTH;j++){
-                //assert i==2;
+                Log.d(TAG_MAIN,"i = "+i);
+                if(i==3){
+                    System.out.println(i);
+                }
                 cells[i][j] = (Button) inflater.inflate(R.layout.cell,layout,false);
             }
         }
