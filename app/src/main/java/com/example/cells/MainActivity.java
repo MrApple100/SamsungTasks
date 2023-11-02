@@ -34,17 +34,19 @@ public class MainActivity extends AppCompatActivity {
         layout.removeAllViews();
         layout.setColumnCount(WIDTH);
         LayoutInflater inflater = (LayoutInflater) getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
-
+       // divideByZero();
         cells = new Button[HEIGHT][WIDTH];
 
         for(int i=0;i<HEIGHT;i++){
             for(int j=0;j<WIDTH;j++){
+                //assert i==2;
                 cells[i][j] = (Button) inflater.inflate(R.layout.cell,layout,false);
             }
         }
 
         for(int i=0;i<HEIGHT;i++){
             for(int j=0;j<WIDTH;j++){
+
                 cells[i][j].setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -76,13 +78,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void divideByZero() {
+       // int x = 10/0;
+    }
 
-
-
-
-
-
-
+    public static int axb(int x){
+        return 2*x+10;
+    }
 
 
 }

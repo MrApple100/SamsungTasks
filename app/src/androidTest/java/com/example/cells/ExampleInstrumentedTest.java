@@ -23,4 +23,19 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.example.cells", appContext.getPackageName());
     }
+
+    @Test
+    public void approveMath(){
+        assertEquals(MainActivity.axb(10),30);
+    }
+    @Test
+    public void disApproveMath(){
+        assertEquals(MainActivity.axb(2),15);
+    }
+
+
+
+
+
+
 }
