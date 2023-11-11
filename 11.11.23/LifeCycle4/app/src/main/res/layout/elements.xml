@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/TV"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+    </TextView>
+    <Button
+        android:id="@+id/But"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Click">
+    </Button>
+    <EditText
+        android:id="@+id/ET"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Ввести знак зодиака">
+
+    </EditText>
+    <CheckBox
+        android:id="@+id/CB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="я ыыыыыыыыыыыыыыыыыыы">
+
+    </CheckBox>
+    <RadioGroup
+        android:id="@+id/RG1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/RB1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Яблочко">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/RB2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Грушка">
+        </RadioButton>
+    </RadioGroup>
+
+</LinearLayout>
