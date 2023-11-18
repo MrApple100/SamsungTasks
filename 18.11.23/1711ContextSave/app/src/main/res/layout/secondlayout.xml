@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/Clear"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Clear">
+    </Button>
+
+
+    <EditText
+        android:id="@+id/truelogin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/truepassword"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        ></EditText>
+
+    <Button
+        android:id="@+id/Set"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Set">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/ACT3"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="Activity3">
+
+    </Button>
+
+
+</LinearLayout>
